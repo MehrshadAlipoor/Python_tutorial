@@ -25,6 +25,10 @@
     # pull = get the latest changes from the remote repository
     # push = send the changes to the remote repository
     # pull request = request to merge the changes
+    # fetch = get the changes from the remote repository without merging
+        #diffrence between fetch and pull is that fetch does not merge the changes
+    #origin = the default name of the remote repository on github
+    # remote = the remote repository on github
 
 # **git just remembers the changes, not the entire file
 # **git is a log of changes and it is 2 stage process:
