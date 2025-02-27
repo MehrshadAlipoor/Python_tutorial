@@ -56,15 +56,17 @@
     #pwd = present working directory
     #mkdir = make directory
     #touch = create a file
-    #rm = remove
-    #rm -rf = remove directory
+    #rm = remove file
+    #rm -r = remove directory and its contents
+
     #ls-la = list all files including hidden files
     #cp = copy
     #clear = clear the terminal screen
     #nano = text editor
         #ctrl + x = exit
         #y = yes
-    #cat = concatenate and display the content of the file
+    #cat = concatenate and display the content of the file 
+    #mv = move or rename
 
 # git commands:
     # git init = initialize a git repository
@@ -73,7 +75,11 @@
         # git add . or * = add all changes
         # git add filename = add specific file
     # git commit = commit changes to the local repository
-    # git log = view the commit history 
+    # git log = view the commit history
+    # git log --oneline = view the commit history in one line
+    # git log -2 = view the last 2 commits
+    # git diff = view the changes made to the code since the last commit
+    # git diff --staged = view the changes in the staging area  
     # git -m = add a message to the commit
     # git remote = view the remote repository
     #git reset <file_name> = unstage the changes
