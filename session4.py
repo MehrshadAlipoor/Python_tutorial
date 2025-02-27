@@ -58,6 +58,8 @@
     #touch = create a file
     #rm = remove file
     #rm -r = remove directory and its contents
+    #to rename a file = mv oldname newname
+    #to rename a directory = mv oldname newname
 
     #ls-la = list all files including hidden files
     #cp = copy
