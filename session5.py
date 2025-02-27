@@ -66,3 +66,9 @@
     # git remote add <name> <url> = add a new remote
     # git remote remove <name> = remove a remote
     # git remote rename <old_name> <new_name> = rename a remote 
+
+# working with remotes:
+    # clone a repository = download a copy of the repository
+    # fork a repository = create a copy of the repository on github
+    # pull request = request to merge changes from a forked repository
+    # fetch = get changes from the remote repository without merging
