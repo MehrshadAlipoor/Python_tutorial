@@ -76,7 +76,13 @@
     # git add = add changes to the staging area
         # git add . or * = add all changes
         # git add filename = add specific file
+
     # git commit = commit changes to the local repository
+        # git commit -m "message" = add a message to the commit
+        # git comit -a -m "message" = add and commit in one step 
+            # except for new files
+            # git -a = add all changes
+    
     # git log = view the commit history
     # git log --oneline = view the commit history in one line
     # git log -2 = view the last 2 commits
