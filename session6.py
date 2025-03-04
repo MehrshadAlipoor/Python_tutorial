@@ -119,3 +119,50 @@ elif unit.strip().upper() == "M":
 
 else:
     print("Invalid unit. Please enter 'F' for feet or 'M' for meters.")
+
+# ================================================================================================
+# Building a car game
+
+# Exercise: Build a car game that simulates the basic functions of a car.
+# The car can start, stop, accelerate, and exit the game.
+
+command = ""
+is_started = False  # car is not started initially
+
+while True:
+    command = input("> ").lower()
+
+    if command == "start":
+        if not is_started:
+            print("Car is already started.")
+        else:
+            is_started = True
+            print("Car started...Ready to go!")
+
+    elif command == "stop":
+        if not is_started:
+            print("Car is already stopped.")
+        else:
+            is_started = False
+            print("Car stopped.")
+
+    elif command == "accelerate":
+        if is_started:
+            print("Car is accelerating...")
+        else:
+            print("Car needs to be started first.")
+
+    elif command == "exit":
+        print("Exiting the car game...")
+        break
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+accelerate - to accelerate the car
+exit - to exit the game
+              """)
+
+    else:
+        print("Invalid command. Please enter 'start', 'stop', 'accelerate', or 'exit'.")
+        
