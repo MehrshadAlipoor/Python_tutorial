@@ -1,4 +1,4 @@
-#Session6: Git and Github
+# Session6: Git and Github
 # Date: 04/03/2025
 
 # ================================================================================================
@@ -12,29 +12,29 @@
 
 # how to resolve a conflict in git?
     # To resolve a conflict in git, you need to follow these steps:
-    # 1. Identify the conflicting files and lines of code.
-    # 2. Open the conflicting files in a text editor.
-    # 3. Search for the conflict markers (<<<<<<<, =======, >>>>>>>).
-    # 4. Choose one of the conflicting changes or combine them.
-    # 5. Save the changes and remove the conflict markers.
-    # 6. Add the resolved files to the staging area.
-    # 7. Commit the changes to complete the conflict resolution.
-    # 8. Push the changes to the remote repository to share the resolved conflict.
+        # 1. Identify the conflicting files and lines of code.
+        # 2. Open the conflicting files in a text editor.
+        # 3. Search for the conflict markers (<<<<<<<, =======, >>>>>>>).
+        # 4. Choose one of the conflicting changes or combine them.
+        # 5. Save the changes and remove the conflict markers.
+        # 6. Add the resolved files to the staging area.
+        # 7. Commit the changes to complete the conflict resolution.
+        # 8. Push the changes to the remote repository to share the resolved conflict.
 
 # conflict resolution strategies in git
     # There are several strategies for resolving conflicts in git:
-    # 1. Accept current change: Choose the changes from the current branch.
-    # 2. Accept incoming change: Choose the changes from the incoming branch.
-    # 3. Accept both changes: Combine the changes from both branches.
-    # 4. Accept all changes: Accept all changes from both branches.
-    # 5. Manual resolution: Manually edit the code to resolve the conflict.
+        # 1. Accept current change: Choose the changes from the current branch.
+        # 2. Accept incoming change: Choose the changes from the incoming branch.
+        # 3. Accept both changes: Combine the changes from both branches.
+        # 4. Accept all changes: Accept all changes from both branches.
+        # 5. Manual resolution: Manually edit the code to resolve the conflict.
 
 # conflict resolution tools in git
     # Git provides several tools to help you resolve conflicts:
-    # 1. git mergetool: A tool that helps you resolve conflicts interactively.
-    # 2. git diff: A command that shows the differences between conflicting files.
-    # 3. git status: A command that shows the status of the conflict resolution.
-    # 4. git checkout: A command that allows you to switch between conflicting changes.
+        # 1. git mergetool: A tool that helps you resolve conflicts interactively.
+        # 2. git diff: A command that shows the differences between conflicting files.
+        # 3. git status: A command that shows the status of the conflict resolution.
+        # 4. git checkout: A command that allows you to switch between conflicting changes.
 
 # ================================================================================================
 # Forking in Git
@@ -59,9 +59,6 @@
     # When you create a pull request, the changes are reviewed by the repository owner before they are merged.
     # Pull requests are a common way to contribute to open source projects on github.
 
-
-
-
 # ================================================================================================
 # Git blame
 
@@ -82,3 +79,43 @@
     # Annotated tags store additional information such as tagger name, email, date, and message.
 
 # ================================================================================================
+
+# Python Learning
+
+# Exercise: creat a weight converter program that asks the user to enter a weight in kg or lbs and converts it to the other unit.
+# 1 kg = 2.20462 lbs
+# 1 lb = 0.453592 kg
+
+weight = float(input("Input your weight: "))
+unit = input("(L)bs or (K)g: ")
+
+if unit.upper() == "L":
+    converted_weight = weight * 0.453592
+    print(f"Your weight in kg is: {converted_weight}")
+
+elif unit.upper() == "K":
+    converted_weight = weight * 2.20462
+    print(f"Your weight in lbs is: {converted_weight}")
+
+else:
+    print("Invalid unit. Please enter 'L' for lbs or 'K' for kg.")
+
+# ================================================================================================
+# Height converter program
+
+# 1 ft = 0.3048 m
+# 1 m = 3.28084 ft
+
+height = float(input("Input your height: "))
+unit = input("Enter height unit (F)eet or (M)eters: ")
+
+if unit.strip().upper() == "F":
+    converted_height = height * 0.3048
+    print(f"Your height in meters is: {converted_height}")
+
+elif unit.strip().upper() == "M":
+    converted_height = height * 3.28084
+    print(f"Your height in feet is: {converted_height}")
+
+else:
+    print("Invalid unit. Please enter 'F' for feet or 'M' for meters.")
