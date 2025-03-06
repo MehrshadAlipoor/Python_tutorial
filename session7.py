@@ -28,8 +28,44 @@ print (names[-1])  # Jack
 print (names[1:])  # ['Jane', 'Jack']   # slicing
 print (names[1:3])  # ['Jane', 'Jack']  # slicing 
 
+# finding max number
+
+outnumbers = list(range(1, 100))
+
+max = outnumbers[0]
+
+for number in outnumbers:
+    if number > max:
+        max = number
+
+print(max)
+
+# list methods
+# append()	Adds an element at the end of the list
+# clear()	Removes all the elements from the list
+# copy()	Returns a copy of the list
+# count()	Returns the number of elements with the specified value
+# index()	Returns the index of the first element with the specified value
+# insert()	Adds an element at the specified position
+# pop()	Removes the element at the specified position
+    # example: numbers.pop(0)  # removes the first element
+# remove()	Removes the item with the specified value
+# in the list
+    #example: print(50 in numbers)  # True
+# sort()	Sorts  the list
+    # example: numbers.sort() # [1, 2, 3, 4, 5]
+
+
+# ================================================================================================
+
 # Tuple
 coordinates = (1, 2, 3)
+# we can't change the value of a tuple
+# coordinates[1] = 10  # TypeError: 'tuple' object does not support item assignment
+
+# tuple methods
+# count()	Returns the number of times a specified value occurs in a tuple
+# index()	Searches the tuple for a specified value and returns the position of where it was found
 
 # Set
 colors = {"red", "green", "blue"}
@@ -40,6 +76,39 @@ person = {
     "age": 30,
     "city": "New York"
 }
+
+# dictionary items
+    # keys()	Returns a list containing the dictionary's keys
+    # values()	Returns a list containing the dictionary's values
+
+# dictionary methods
+
+# clear()	Removes all the elements from the dictionary
+# copy()	Returns a copy of the dictionary
+# fromkeys()	Returns a dictionary with the specified keys and value
+# get()	Returns the value of the specified key to avoid KeyError
+# items()	Returns a list containing a tuple for each key value pair
+
+# exercise: emoji converter
+'''
+message = input(">")
+words = message.split(" ")
+emojis = {
+    ":)": "😊",
+    ":(": "😢"
+}
+output = ""
+for word in words: # O(n)
+    output += emojis.get(word, word) + " "
+print(output)
+'''
+# ================================================================================================
+# A quick tip about functions
+
+# in function to pass an argument to a function use keyword argument after positional argument
+# example: def greet_user(first_name, last_name):  # positional argument
+# greet_user(first_name="John", last_name="Doe")  # keyword argument
+
 
 # ================================================================================================
 
@@ -85,17 +154,6 @@ for x_count in numbers:
         output += 'x'
     print(output)
 
-# print an M using a list of numbers
-m_pattern = [
-    'x     x',
-    'xx   xx',
-    'x x x x',
-    'x  x  x',
-    'x     x'
-]
-
-for line in m_pattern:
-    print(line)
 numbers = [8, 8, 8, 8, 8]
 for x_count in range(len(numbers)):
     output = ''
@@ -119,5 +177,29 @@ for x_count in numbers:
     for count in range(x_count):
         output += 'x'
     print(output)
+
+# ================================================================================================
+
+# Unpacking
+
+numbers = [1, 2, 3]
+x, y, z = numbers
+print(x)  # 1
+print(y)  # 2
+print(z)  # 3
+
+# ================================================================================================
+# exceptions
+# we use try and except block to handle exceptions
+# it helps to handle errors and avoid program crash
+# example: ValueError, ZeroDivisionError, FileNotFoundError, etc
+
+try:
+    age = int(input("Age: "))
+    print(age)
+except ValueError:
+    print("Invalid value")
+
+# use comments to explain whys and hows not whats
 
 # ================================================================================================
