@@ -87,12 +87,7 @@ person = {
 # copy()	Returns a copy of the dictionary
 # fromkeys()	Returns a dictionary with the specified keys and value
 # get()	Returns the value of the specified key to avoid KeyError
-    # example: print(person.get("name"))  # John
 # items()	Returns a list containing a tuple for each key value pair
-    # example: print(person.items())  # dict_items([('name', 'John'), ('age', 30), ('city', 'New York')])
-# keys()	Returns a list containing the dictionary's keys
-    #example: print(person.keys())  # dict_keys(['name', 'age', 'city'])
-# pop()	Removes the element with the specified key
 
 # exercise: emoji converter
 '''
