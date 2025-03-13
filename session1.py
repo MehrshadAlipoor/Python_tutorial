@@ -11,7 +11,9 @@ is_published = True
 course_name = "  python programming"  # String
 
 print(students_count)
+
 # string methods
+
 print(len(course_name))
 print(course_name[-1])
 print(course_name[:])
@@ -29,6 +31,7 @@ print(course_name.replace("p", "j"))
 print("pro" in course_name)  # Returns a boolean value
 # not operator
 print("pTo" not in course_name)  # Returns a boolean value
+
 
 # ================================================================================================
 # Numbers
