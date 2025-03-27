@@ -82,3 +82,17 @@ print(sum_of_numbers([1, 2, 3, 4, 5]))
 print('hello', 'world', sep=', ', end='!')
 
 # ==================================================================================================
+# True or True = True
+# True or False = True
+# False or True = True
+# False or False = False
+
+# True and True = True
+# True and False = False
+# False and True = False
+# False and False = False
+
+# not True = False
+# not False = True
+
+# ==================================================================================================
