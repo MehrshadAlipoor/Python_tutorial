@@ -96,3 +96,22 @@ def example_function(*args, **kwargs):
 # calling the function with different arguments
 example_function(1, 2, 3, name='John', age=25)
 example_function('hello', 'world', greeting='Hi', language='Python')
+
+
+# ==================================================================================================
+# Function in python:
+    # - A function is a block of code that performs a specific task.
+    # - Functions are used to organize code into reusable blocks that can be called multiple times.
+    # - example:
+
+def greet(name):
+    '''This function takes a name as an argument and prints a greeting message.'''
+    print(f'Hello, {name}!')
+
+# calling the function
+greet('John')
+greet('Alice')
+greet('Bob')
+
+#excersice:
+# 1. Write a Python function that takes a number as an argument and returns the square of that number.
