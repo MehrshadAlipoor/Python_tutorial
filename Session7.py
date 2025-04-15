@@ -75,6 +75,40 @@ for i in tqdm(range(100), desc="Loading", unit="item"):
     time.sleep(0.1)  # Simulating a time-consuming task
     # Output: A progress bar that shows the loading progress
 
+# difrence between module and package:
+    # - A module is a single file containing Python code, while a package is a directory containing multiple modules and sub-packages.
+    # - A module can be imported directly, while a package requires the use of the import statement with the package name.
+    # - A module can contain functions, classes, and variables, while a package can contain multiple modules and sub-packages.
+    # - A module can be imported using the import statement, while a package can be imported using the import statement with the package name.
+    # - A module can be a standalone file, while a package is a directory that contains multiple modules and sub-packages.
+    # - pypi is the Python Package Index, which is a repository of software for the Python programming language.
+    # - python is python because of enourmous number of packages available in pypi.
+    # - pypi is the official third-party software repository for Python.
+    # - pypi is the default package index for the pip package manager.
+    # - Using packages makes it easier to share and distribute code, as well as to reuse existing code in your own projects.
+#     - Using packages makes it easier to manage dependencies and avoid naming conflicts between different modules.
+#     - Using packages makes it easier to organize code into logical units, making it easier to maintain and understand.
+from tackage.my_package import test_function, my_pi
+print(test_function())  # Output: This is a test function in the package.
+print(my_pi)  # Output: 3.14
+
+
+
+# =================================================================================================
+# # context manager in python:
+# using with in python:
+    # - The with statement is used to wrap the execution of a block of code within methods defined by a context manager.
+    # - The with statement simplifies exception handling by encapsulating common preparation and cleanup tasks in so-called context managers.
+    # - The with statement is often used when working with files, network connections, or other resources that need to be properly managed.
+    # - The with statement ensures that resources are properly cleaned up after use, even if an error occurs during the execution of the block.
+    # example:
+        # with open('file.txt', 'r') as file:
+        #     content = file.read()
+        #     print(content)  # The file is automatically closed after the block is executed
+with open('file.txt', 'r') as file:
+    content = file.read()
+    print(content)  # The file is automatically closed after the block is executed
+
 # ================================================================================================
 # dunder files:
     # - Dunder files are special files in Python that have double underscores before and after their names.
@@ -82,4 +116,12 @@ for i in tqdm(range(100), desc="Loading", unit="item"):
     # - For creating a package, you need to create a directory with the package name and add an __init__.py file inside it.
     # - The __init__.py file can be empty or contain initialization code for the package.
     # - Dunder files are used to define the behavior of objects and classes in Python.
-    
+
+# ================================================================================================
+# __name__ and __main__:
+    # - __name__ is a special variable in Python that represents the name of the current module.
+    # - __main__ is the name of the top-level script that is being executed.
+    # - When a Python script is run, the __name__ variable is set to "__main__" for the top-level script.
+    # - When a module is imported, the __name__ variable is set to the module's name.
+    # - The if __name__ == "__main__": block is used to check if the script is being run as the main program or if it is being imported as a module.
+    # - This allows you to write code that can be used both as a standalone script and as a module that can be imported into other scripts.
